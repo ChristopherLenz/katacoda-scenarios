@@ -23,12 +23,17 @@
         },
         "finish": {
             "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {"file": "rabbit-values.yaml", "target": "/root/", "chmod": "+x"}
+            ]
         }
     },
     "environment": {
         "uilayout": "terminal"
     },
     "backend": {
-        "imageid": "kubernetes"
+        "imageid": "kubernetes-cluster-running:1.18"
     }
 }
