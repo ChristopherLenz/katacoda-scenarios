@@ -1,5 +1,7 @@
 For this scenario, Katacoda has just created a fresh Kubernetes cluster for you. 
 
+This environment has a `launch.sh`{{execute}}
+
 Verify it's ready for your use.
 
 `kubectl version --short && \
