@@ -26,7 +26,8 @@
         },
         "assets": {
             "host01": [
-                {"file": "rabbit-values.yaml", "target": "/root/", "chmod": "+x"}
+                {"file": "rabbit-values.yaml", "target": "/root/", "chmod": "+x"},
+                {"file": "token.sh", "target": "/usr/local/bin/", "chmod": "+x"}
             ]
         }
     },
