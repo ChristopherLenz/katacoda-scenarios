@@ -1,6 +1,6 @@
 #!/bin/bash
 export COLOR_RESET='\e[0m'
-export COLOR_LIGHT_GREEN='\e[0;49;32m'
+export COLOR_LIGHT_GREEN='\e[0;49;32m' 
 
 # Technique to grab Kubernetes dashboard access token.
 # Typically used in Katacoda scenarios.
