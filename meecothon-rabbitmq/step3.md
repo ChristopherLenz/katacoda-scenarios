@@ -2,7 +2,7 @@
 
 `helm upgrade --install --set messagequeue.uri=my-rabbit-rabbitmq:5672 --set messagequeue.user=guest --set messagequeue.pass=guest producer meecothonrepo/meecothon-rabbitmq-producer --set hostname=producer.meecothon.com -n rabbit`{{execute}}
 
-`export PRODUCER_IP=$(kubectl get services/producer-svc -o go-template='{{(index .spec.clusterIP)}}')`{{execute}}
+`export PRODUCER_IP=$(kubectl get services/producer-svc -o go-template="{{(index .spec.clusterIP)}}")`{{execute}}
 
 `echo PRODUCER_IP=$PRODUCER_IP`{{execute}}
 
