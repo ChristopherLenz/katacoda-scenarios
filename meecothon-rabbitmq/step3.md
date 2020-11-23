@@ -16,10 +16,10 @@ Now we can install a sample applications which provides a REST service, which wi
 producer meecothonrepo/meecothon-rabbitmq-producer`{{execute}}
 
 We need the IP of the REST service
-`export PRODUCER_IP=$(kubectl get services/producer-svc -n meecothon -o go-template="{{(index .spec.clusterIP)}}") && echo PRODUCER_IP=$PRODUCER_IP`{{execute}}
+`export PRODUCER_IP=$(kubectl get services/producer-svc -n meecothon -o go-template="{{(index .spec.clusterIP)}}") && echo PRODUCER_IP=$PRODUCER_IP`{{execute curl}}
 
 Let's check the health of the service.
-`curl --location --request GET "http://$PRODUCER_IP/health"; echo`{{execute}}
+`curl --location --request GET "http://$PRODUCER_IP/health"; echo`{{execute curl}}
 
 If it is healthy we can trigger a new event. This will create a message with the routing-key `test`
-`curl --location --request POST "http://$PRODUCER_IP/api/v1/events/new/test" --header "Content-Type: application/json" --data-raw "keks"; echo`{{execute}}
+`curl --location --request POST "http://$PRODUCER_IP/api/v1/events/new/test" --header "Content-Type: application/json" --data-raw "keks"; echo`{{execute curl}}
