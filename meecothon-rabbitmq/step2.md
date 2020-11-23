@@ -8,9 +8,14 @@ In order to use custom helm charts, we have to add additional repositories.
 
 Now we can access charts of this repository via the prefix `bitnami`. 
 
-Lets install RabbitMQ via HELM now
+Lets install RabbitMQ via HELM now.
 
-`helm install my-rabbit bitnami/rabbitmq --version 7.5.6 --namespace meecothon -f rabbit-values.yaml`{{execute}}
+`helm install my-rabbit bitnami/rabbitmq \
+--version 7.5.6 \
+--namespace meecothon \
+-f rabbit-values.yaml`{{execute}}
+
+The installation parameter are describes here: https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq
 
 This will take 2-3min. While we wait you can check what other charts are available in this repository (`helm search`)? (https://helm.sh/docs/intro/using_helm/)
 
