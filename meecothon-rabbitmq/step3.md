@@ -16,15 +16,15 @@ Now we can install a sample application with a REST service, which will publish 
 producer meecothonrepo/meecothon-rabbitmq-producer`{{execute}}
 
 We need the IP of the REST service
-`export PRODUCER_IP=$(kubectl get services/producer-svc -n meecothon -o go-template="{{(index .spec.clusterIP)}}") && echo PRODUCER_IP=$PRODUCER_IP`{{execute T2}}
+`export PRODUCER_IP=$(kubectl get services/producer-svc -n meecothon -o go-template="{{(index .spec.clusterIP)}}") && echo PRODUCER_IP=$PRODUCER_IP`{{execute T3}}
 
 Let's check the health of the service.
-`curl --location --request GET "http://$PRODUCER_IP/health"; echo`{{execute T2}}
+`curl --location --request GET "http://$PRODUCER_IP/health"; echo`{{execute T3}}
 
 If it is healthy we can trigger a new event. This will create a message with the routing-key `test`
-`curl --location --request POST "http://$PRODUCER_IP/api/v1/events/new/test" --header "Content-Type: application/json" --data-raw "keks"; echo`{{execute T2}}
+`curl --location --request POST "http://$PRODUCER_IP/api/v1/events/new/test" --header "Content-Type: application/json" --data-raw "keks"; echo`{{execute T3}}
 
 If we want to add multiple events at once we can do it this way:
-`curl --location --request POST "http://$PRODUCER_IP/api/v1/events/new/test/100" --header "Content-Type: application/json" --data-raw "keks"; echo`{{execute T2}}
+`curl --location --request POST "http://$PRODUCER_IP/api/v1/events/new/test/100" --header "Content-Type: application/json" --data-raw "keks"; echo`{{execute T3}}
 
 Now take your time and play a little bit with RabbitMQ!

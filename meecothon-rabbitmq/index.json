@@ -42,7 +42,8 @@
           {"name": "RabbitMQ Portal", "port": 31000}
         ],
         "terminals": [
-            {"name": "Watch All", "command": "watch kubectl get pods,services,ingresses,pv,pvc --all-namespaces", "target": "host01"}
+            {"name": "Watch All", "command": "watch kubectl get pods,services,ingresses,pv,pvc --all-namespaces", "target": "host01"},
+            {"name": "Trigger Event", "target": "host01"}
         ]
     },
     "backend": {
