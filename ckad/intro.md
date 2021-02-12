@@ -1,0 +1,1 @@
+In this scenario we'll learn all the things we need for the CKAD

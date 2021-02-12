@@ -1,0 +1,40 @@
+{
+    "title": "meecothon-rabbitmq",
+    "description": "MeeCoThon",
+    "difficulty": "medium",
+    "time": "30 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1",
+                "text": "step1.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "code": "env-init.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {"file": "*.yaml", "target": "/root"},
+                {"file": "token.sh", "target": "/usr/local/bin", "chmod": "+x"}
+            ]
+        }
+    },
+    "environment": {
+        "showdashboard": true,
+        "uilayout": "terminal",
+        "uimessage1": "\u001b[32mYour interactive Bash terminal.\u001b[m\r\n",
+        "icon": "fa-kubernetes",
+        "dashboards": [
+          {"name": "Kubernetes Dashboard", "port": 30000}, 
+          {"name": "RabbitMQ Portal", "port": 31000}
+        ]
+    },
+    "backend": {
+        "imageid": "kubernetes-cluster-running:1.18"
+    }
+}
