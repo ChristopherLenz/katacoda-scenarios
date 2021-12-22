@@ -29,6 +29,12 @@
           "text": "4_task.md",
           "verify": "4_verify.sh",
           "hint": "4_hint.sh"
+        },
+        {
+          "title": "Task 5 - delete a namespace",
+          "text": "5_task.md",
+          "verify": "5_verify.sh",
+          "hint": "5_hint.sh"
         }
       ],
       "intro": {

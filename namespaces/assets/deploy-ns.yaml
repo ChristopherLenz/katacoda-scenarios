@@ -22,19 +22,3 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: challenge-created-ns-0818
----
-apiVersion: v1
-kind: Pod
-metadata:
-  creationTimestamp: null
-  labels:
-    run: nginx
-  name: nginx-challenge
-  namespace: challenge-created-ns-0817
-spec:
-  containers:
-  - image: nginx
-    name: nginx-challenge
-    resources: {}
-  dnsPolicy: ClusterFirst
-  restartPolicy: Always

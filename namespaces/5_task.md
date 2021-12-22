@@ -1,0 +1,1 @@
+Now it is time to clean up a little bit. Delete the namespace `challenge-created-ns-0816`{{copy}}.

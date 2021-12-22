@@ -1,1 +1,1 @@
-Now it is time to create your first namespace. Name it `my-created-ns-4712`
+Now it is time to create your first namespace. Name it `my-created-ns-4712`{{copy}}

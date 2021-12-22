@@ -1,1 +1,1 @@
-Now create a pod inside this newly created namespace. The pod shall be named `nginx` of image `nginx`. You can create a pod with the help of `kubectl run nginx --image=nginx`.
+Now create a pod inside this newly created namespace. The pod shall be named `nginx` of image `nginx`. You can create a pod with the help of `kubectl run nginx --image=nginx`{{copy}}.
