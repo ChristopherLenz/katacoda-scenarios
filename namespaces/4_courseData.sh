@@ -1,1 +1,0 @@
-kubectl run nginx-challenge --image=nginx -n challenge-created-ns-0817 > /opt/4_deploy.log
