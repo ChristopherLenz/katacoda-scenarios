@@ -29,7 +29,7 @@
           "text": "4_task.md",
           "verify": "4_verify.sh",
           "hint": "4_hint.sh",
-          "courseData": "4_courseData.sh"
+          "code": "4_courseData.sh"
         },
         {
           "title": "Task 5 - delete a namespace",
@@ -52,7 +52,7 @@
     "environment": {
       "uilayout": "terminal",
       "showide": false,
-      "hidesidebar": true
+      "hidesidebar": false
     },
     "backend": {
       "imageid": "kubernetes-cluster-running:1.18"
