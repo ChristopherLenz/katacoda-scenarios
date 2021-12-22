@@ -7,10 +7,28 @@
     "details": {
       "steps": [
         {
-          "title": "Task 1 - Output env",
+          "title": "Task 1 - get namespaces",
           "text": "1_task.md",
           "verify": "1_verify.sh",
           "hint": "1_hint.sh"
+        },
+        {
+          "title": "Task 2 - create a namespace",
+          "text": "2_task.md",
+          "verify": "2_verify.sh",
+          "hint": "2_hint.sh"
+        },
+        {
+          "title": "Task 3 - create a pod in this namespace",
+          "text": "3_task.md",
+          "verify": "3_verify.sh",
+          "hint": "3_hint.sh"
+        },
+        {
+          "title": "Task 4 - search for a pod",
+          "text": "4_task.md",
+          "verify": "4_verify.sh",
+          "hint": "4_hint.sh"
         }
       ],
       "intro": {
