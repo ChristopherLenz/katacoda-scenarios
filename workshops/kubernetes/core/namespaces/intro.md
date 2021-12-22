@@ -1,0 +1,1 @@
+To complete this challenge you will need to master Kubernetes Namespaces.

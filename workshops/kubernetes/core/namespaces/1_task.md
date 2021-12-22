@@ -1,0 +1,1 @@
+Write all available namespaces to a file called `/root/ns1`
