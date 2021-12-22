@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grep app-env -ie 'my-created-ns-4711'
+grep ns1 -ie 'challenge-created-ns-4711'
