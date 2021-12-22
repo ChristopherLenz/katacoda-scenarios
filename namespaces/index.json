@@ -28,7 +28,8 @@
           "title": "Task 4 - search for a pod",
           "text": "4_task.md",
           "verify": "4_verify.sh",
-          "hint": "4_hint.sh"
+          "hint": "4_hint.sh",
+          "courseData": "4_courseData.sh"
         },
         {
           "title": "Task 5 - delete a namespace",
@@ -44,8 +45,7 @@
       },
       "assets": {
         "host01": [
-            {"file": "deploy-ns.yaml", "target": "/opt/"},
-            {"file": "deploy-po.yaml", "target": "/opt/"}
+            {"file": "deploy-ns.yaml", "target": "/opt/"}
         ]
       }
     },
